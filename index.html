@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>demonstrate the semantic tags using the div</title>
+        <style>
+            body
+            {
+                width: 100vw;
+                height: 100vh;
+                margin: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: linear-gradient(#FF61D2,#FE9090);
+
+            }
+            .container
+            {
+                width: 60vw;
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .hvf
+            {
+                width: 80%;
+                height: 10%;
+                background-image: linear-gradient(to top right,#43cea2 40% , #185a9d);
+                /* background-image: linear-gradient(direction, color-stop1, color-stop2, ...); */
+                color: gold;
+                font-family: sans-serif;
+                font-weight: 900;
+                font-size: 1.8rem;
+                /* text-transform: capitalize;
+                it will capatilize the first letter of all the letters */
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .saa
+            {
+                width: 80%;
+                height: 30%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+           #secarti
+           {
+            width: 65%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+           }
+           #secarti div
+           {
+            width: 100%;
+            height: 40%;
+            background-image: linear-gradient(to top right,#43cea2 40% , #185a9d);
+           }
+           #aside
+           {
+            width: 30%;
+            height: 100%;
+            background-image: linear-gradient(to top right,#43cea2 40% , #185a9d);
+           }
+           body div
+           {
+            border-radius: 40px;
+           }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="hvf">&lt;Header&gt;</div>
+            <!-- &lt; and &gt; are the html entities -->
+            <div  class="hvf">&lt;Nav&gt;</div>
+            <div class="saa">
+                <div id="secarti">
+                    <div class="hvf">&lt;section&gt;</div>
+                    <div  class="hvf">&lt;Article&gt;</div>
+                </div>    
+                <div id="aside"  class="hvf">&lt;aside&gt;</div>  
+            </div>
+            <div  class="hvf">&lt;footer&gt;</div>
+        </div>
+    </body>
+</html>
